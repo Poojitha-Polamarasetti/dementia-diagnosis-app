@@ -1,3 +1,11 @@
+<img width="872" height="906" alt="test score" src="https://github.com/user-attachments/assets/98e0b0ed-e170-493f-a97d-ddcf8333ce56" />
+<img width="1920" height="1014" alt="registration screen" src="https://github.com/user-attachments/assets/ed0f37f6-0d18-4e7e-aeca-b020b99bf5a2" />
+<img width="874" height="910" alt="mmse test" src="https://github.com/user-attachments/assets/14655839-e404-41fe-b8e9-131ab9873b10" />
+<img width="1657" height="1021" alt="menu screen" src="https://github.com/user-attachments/assets/9153add5-9f78-43eb-af68-e67efe1661a3" />
+<img width="1920" height="1020" alt="medical test" src="https://github.com/user-attachments/assets/d2007362-073b-4d52-9b5f-bece3375c398" />
+<img width="1920" height="1020" alt="login screen" src="https://github.com/user-attachments/assets/eb6d5761-5e56-453e-bc47-e3d27c02fd6b" />
+<img width="1920" height="1022" alt="history screen" src="https://github.com/user-attachments/assets/1f4ad2d5-a51a-4ea2-89eb-1da3fff57ee7" />
+<img width="604" height="513" alt="forgot password" src="https://github.com/user-attachments/assets/f24a662a-3523-46e3-bd3b-010d013da589" />
 # 🧠 Dementia Detection Using MMSE and Machine Learning
 
 This project is a GUI-based system to assist in the early diagnosis of dementia. It integrates a user-friendly interface with a dynamic MMSE (Mini-Mental State Examination) test and a machine learning model (Random Forest) to predict the likelihood of dementia based on medical and cognitive inputs.
@@ -50,7 +58,7 @@ dementia-detection/
 
 🤖 Machine Learning Model
 Algorithm Used: Random Forest Classifier
-Input Features: Age, BMI, Blood Pressure, MMSE Score
+Input Features: Age, BMI, lifestyle, MMSE Score
 Accuracy: ~93% (based on training dataset)
 Output: Predicts "Dementia Likely" or "Not Likely"
 
