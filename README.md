@@ -42,16 +42,26 @@ This project was developed as a final-year MCA application integrating machine l
 ---
 
 ## 🗂 Project Structure
-dementia-detection/
+dementia-diagnosis-app/
 │
-├── mess.py # Main application file
-├── mmse_test_gui.py # MMSE test window logic
-├── model.pkl # Trained ML model
-├── database.sql # Database schema
-├── assets/ # UI images and icons
-├── screenshots/ # Application screenshots
+├── app/
+│   ├── main_app.py
+│   ├── mmse_test_gui.py
+│
+├── model/
+│   ├── dementia_model.pkl
+│   ├── model_features.pkl
+│
+├── data/
+│   ├── alzheimer_dataset.csv
+│
+├── training/
+│   ├── model_training.py
+│
+├── reports/
+│   ├── dementia_report.pdf
+│
 └── README.md
-
 
 ---
 
@@ -72,7 +82,7 @@ pip install pandas numpy scikit-learn pillow mysql-connector-python
 - Update database credentials in Python files
 
 ### 4️⃣ Run Application
-python mess.py
+python main.py
 
 
 ---
