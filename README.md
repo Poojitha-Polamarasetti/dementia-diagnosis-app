@@ -1,62 +1,90 @@
 # 🧠 Dementia Detection Using MMSE and Machine Learning
 
-This project is a GUI-based system to assist in the early diagnosis of dementia. It integrates a user-friendly interface with a dynamic MMSE (Mini-Mental State Examination) test and a machine learning model (Random Forest) to predict the likelihood of dementia based on medical and cognitive inputs.
+A GUI-based application designed to assist in early dementia risk assessment by integrating a dynamic MMSE test with a trained Random Forest classification model.
 
-## 🌟 Features
+---
 
-- User authentication system (Login/Register)
-- Dynamic MMSE test with one question per screen
-- Automatic MMSE score calculation and integration
-- Dementia prediction using trained Random Forest model
-- User-friendly GUI built with Tkinter
-- History tracking of predictions and login activity
+## 📌 Project Overview
 
-## 🛠️ Tech Stack
+This system combines cognitive assessment scoring (MMSE) with a machine learning model to predict the likelihood of dementia based on medical and behavioral inputs.
+
+The application provides:
+
+- User authentication (Login/Register)
+- Dynamic MMSE test (one question per screen)
+- Automatic MMSE score calculation
+- Random Forest-based dementia prediction
+- MySQL-backed data storage
+- Prediction history tracking
+
+This project was developed as a final-year MCA application integrating machine learning, GUI development, and database management.
+
+---
+
+## 🤖 Machine Learning Model
+
+- **Algorithm Used:** Random Forest Classifier  
+- **Input Features:** Age, BMI, Blood Pressure, MMSE Score  
+- **Accuracy:** ~93% (evaluated on test dataset)  
+- **Output:** “Dementia Likely” / “Not Likely”
+
+---
+
+## 🛠 Tech Stack
 
 - **Programming Language:** Python  
-- **GUI:** Tkinter  
-- **Machine Learning:** scikit-learn (Random Forest)  
+- **GUI Framework:** Tkinter  
+- **Machine Learning:** scikit-learn  
 - **Data Handling:** pandas, numpy  
 - **Database:** MySQL  
-- **Other Tools:** PIL (for images), datetime, file handling
+- **Other Libraries:** Pillow, datetime  
 
-## 📁 Folder Structure
+---
+
+## 🗂 Project Structure
 dementia-detection/
 │
 ├── mess.py # Main application file
-├── mmse_test_gui.py # Dynamic MMSE test window logic
+├── mmse_test_gui.py # MMSE test window logic
 ├── model.pkl # Trained ML model
-├── database.sql # SQL script for database
-├── assets/ # Icons and images
-├── screenshots/ # UI screenshots
-└── README.md # Project documentation
+├── database.sql # Database schema
+├── assets/ # UI images and icons
+├── screenshots/ # Application screenshots
+└── README.md
 
 
-## 🚀 How to Run the Project
+---
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/yourusername/dementia-detection.git
-   cd dementia-detection
-2. Install libraries
-   pip install pandas numpy scikit-learn pillow mysql-connector-python
-3. Set up the MySQL database
-  Start your MySQL server.
-  Run the database.sql script to create required tables.
-  Update the database credentials in the Python files (host, user, password, database).
-4. Run the Application
-  python mess.py
+## 🚀 How to Run
+
+### 1️⃣ Clone Repository
+git clone https://github.com/Poojitha-Polamarasetti/dementia-diagnosis-app.git
+
+cd dementia-diagnosis-app
+
+### 2️⃣ Install Dependencies
+pip install pandas numpy scikit-learn pillow mysql-connector-python
 
 
-🤖 Machine Learning Model
-Algorithm Used: Random Forest Classifier
-Input Features: Age, BMI, Blood Pressure, MMSE Score
-Accuracy: ~93% (based on training dataset)
-Output: Predicts "Dementia Likely" or "Not Likely"
+### 3️⃣ Configure Database
+- Start MySQL server
+- Execute `database.sql`
+- Update database credentials in Python files
 
-🧑‍💻 Author
-Poojitha Polamarasetti
-MCA Student | Frontend & Data Enthusiast
+### 4️⃣ Run Application
+python mess.py
 
-📜 License
-This project is for academic and educational purposes only. Not intended for real medical use.
+
+---
+
+## ⚠ Disclaimer
+
+This system is developed for academic and demonstration purposes only.  
+It is not intended for real-world medical diagnosis.
+
+---
+
+## 👩‍💻 Author
+
+Poojitha Polamarasetti  
+MCA Graduate | Python & Machine Learning
